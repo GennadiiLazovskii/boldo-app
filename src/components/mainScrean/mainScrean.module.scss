@@ -1,0 +1,35 @@
+.mainScrean {
+  background: #0A2640;
+  padding-top: 56px;
+  height: 798px;
+}
+
+.container {
+  width: 1200px;
+}
+
+.mainLogo {
+  width: 200px;
+}
+
+.mainHeader {
+  display: flex;
+  gap: 600px;
+}
+
+.mainbtn {
+  width: 330px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  p {
+    cursor: pointer;
+    font-family: Manrope;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}

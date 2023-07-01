@@ -1,7 +1,7 @@
 .mainScrean {
   background: #0A2640;
   padding-top: 56px;
-  height: 798px;
+  height: 780px;
 }
 
 .container {
@@ -23,13 +23,114 @@
   gap: 40px;
   align-items: center;
   justify-content: center;
+
   p {
     cursor: pointer;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     color: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
   }
+}
+
+.mainCenter {
+  display: flex;
+  gap: 100px;
+  margin-top: 64px;
+
+  .mainCenterLeft {
+    .mainCenterLeftTitle {
+      margin-top: 50px;
+      width: 567px;
+
+      h1 {
+        font-size: 48px;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        color: white;
+      }
+    }
+
+    .mainCenterLeftBtn {
+      width: 540px;
+      margin-top: 85px;
+      display: flex;
+      justify-content: space-between;
+
+      .mainCenterBtnGreen {
+        background-color: #69E6A6;
+        width: 250px;
+        height: 60px;
+        border-radius: 56px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        color: #0A2640;
+        font-size: 20px;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+      }
+
+      .mainCenterBtnWhite {
+        background-color: transparent;
+        width: 250px;
+        height: 60px;
+        border-radius: 56px;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .mainCenterRight {
+    img {
+      width: 490px;
+      height: 430px;
+    }
+  }
+}
+
+.mainBottom {
+  margin-top: 30px;
+  background-color: #0A2640;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.scrollingPhotos {
+  display: flex;
+  gap: 20px;
+  animation: scrollingAnimation 10s linear infinite;
+}
+
+@keyframes scrollingAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrollingPhotos img {
+  width: 170px;
+  height: 60px;
 }

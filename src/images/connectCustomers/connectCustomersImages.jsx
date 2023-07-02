@@ -1,0 +1,11 @@
+export { default as Men } from '../../images/connectCustomers/men-phone.png';
+export { default as Woman } from '../../images/connectCustomers/woman-phone.png';
+export { default as Check } from '../../images/connectCustomers/check.png';
+export { default as InfoGrafic } from '../../images/connectCustomers/group.png';
+export { default as InfoGraficCircle } from '../../images/connectCustomers/graphs-Pie.png';
+export { default as CircleBlue } from '../../images/connectCustomers/circle-blue.png';
+export { default as CircleGreen } from '../../images/connectCustomers/circle-gren.png';
+export { default as CircleGray } from '../../images/connectCustomers/circle-gray.png';
+export { default as Feather } from '../../images/connectCustomers/feather.png';
+export { default as Eye } from '../../images/connectCustomers/eye.png';
+export { default as Sun } from '../../images/connectCustomers/sun.png';

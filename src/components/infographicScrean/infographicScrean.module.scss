@@ -1,0 +1,57 @@
+.infographicScrean {
+  padding-top: 62px;
+
+  .infographicMassMarketTitle {
+      width: 842px;
+      color: #000;
+      text-align: center;
+      font-size: 48px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 72px;
+  }
+
+  .infographicMassMarketBlock {
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+
+    .infographicMassMarketBlockCard {
+      width: 300px;
+      height: 575px;
+
+      img {
+        width: 300px;
+        height: 354px;
+      }
+
+      .CardTitle,
+      .CardDescr,
+      .CardBtn {
+        margin-top: 24px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+      }
+
+      .CardTitle {
+        color: #000;
+        font-size: 24px;
+      }
+
+      .CardDescr {
+        color: #777;
+        font-size: 20px;
+      }
+
+      .CardBtn {
+        cursor: pointer;
+        color: #0A2640;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}

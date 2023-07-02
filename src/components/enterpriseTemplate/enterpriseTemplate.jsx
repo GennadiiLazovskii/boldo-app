@@ -33,7 +33,7 @@ const EnterpriseTemplate = () => {
             <div className={styles.enterpriseTemplateCard}>
               <div className={styles.enterpriseTemplateCardTitle}>“Release facebook responsive web design business model canvas seed money monetization.”</div>
               <div className={styles.enterpriseTemplateCardUser}>
-                <img src={User1} alt="User1" />
+                <img src={User3} alt="User3" />
                 <div className={styles.enterpriseTemplateCardUserPosition}>
                   <p className={styles.name}>Harry Potter</p>
                   <p className={styles.position}>Team Leader @ Gryffindor</p>

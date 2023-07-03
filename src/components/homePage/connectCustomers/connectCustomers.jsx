@@ -11,7 +11,7 @@ import {
   Feather,
   Eye,
   Sun
-} from '../../images/connectCustomers/connectCustomersImages.jsx';
+} from '../../../images/connectCustomers/connectCustomersImages.jsx';
 
 const ConnectCustomers = () => {
   return (

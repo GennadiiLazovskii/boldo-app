@@ -1,8 +1,8 @@
 import styles from './mainScrean.module.scss';
-import BoldoLogo from '../../images/main/logoBoldo.png';
-import BoldoLogoWhite from '../../images/main/logoBoldoWhite.png';
-import Graphics from '../../images/main/graphicsgraf.png';
-import PrestoLogo from '../../images/main/presto-logo.png';
+import BoldoLogo from '../../../images/main/logoBoldo.png';
+import BoldoLogoWhite from '../../../images/main/logoBoldoWhite.png';
+import Graphics from '../../../images/main/graphicsgraf.png';
+import PrestoLogo from '../../../images/main/presto-logo.png';
 
 const MainScrean = () => {
   return (

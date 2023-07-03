@@ -1,6 +1,6 @@
 import styles from './stayOpen.module.scss';
-import stayOpenImg from '../../images/stayOpen/stayOpen.png';
-import Check from '../../images/connectCustomers/check.png';
+import stayOpenImg from '../../../images/stayOpen/stayOpen.png';
+import Check from '../../../images/connectCustomers/check.png';
 
 const StayOpen = () => {
   return (

@@ -1,5 +1,5 @@
 import styles from './bottom.module.scss';
-import Logo from '../../images/main/logoBoldoBL.png';
+import Logo from '../../../images/main/logoBoldoBL.png';
 
 const Bottom = () => {
   return (

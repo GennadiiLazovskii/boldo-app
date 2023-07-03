@@ -1,7 +1,7 @@
 import styles from './enterpriseTemplate.module.scss';
-import User1 from '../../images/enterprise/user-1.png';
-import User2 from '../../images/enterprise/user-2.png';
-import User3 from '../../images/enterprise/user-3.png';
+import User1 from '../../../images/enterprise/user-1.png';
+import User2 from '../../../images/enterprise/user-2.png';
+import User3 from '../../../images/enterprise/user-3.png';
 
 const EnterpriseTemplate = () => {
   return (

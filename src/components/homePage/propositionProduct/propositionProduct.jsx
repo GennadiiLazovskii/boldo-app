@@ -1,10 +1,10 @@
 import styles from './propositionProduct.module.scss';
-import GrenMen from '../../images/proposition/grenmen.png';
-import Woman from '../../images/proposition/woman.png';
-import Houses from '../../images/proposition/home.png';
-import User1 from '../../images/proposition/1.png';
-import User2 from '../../images/proposition/2.png';
-import User3 from '../../images/proposition/3.png';
+import GrenMen from '../../../images/proposition/grenmen.png';
+import Woman from '../../../images/proposition/woman.png';
+import Houses from '../../../images/proposition/home.png';
+import User1 from '../../../images/proposition/1.png';
+import User2 from '../../../images/proposition/2.png';
+import User3 from '../../../images/proposition/3.png';
 
 const PropositionProduct = () => {
   return (

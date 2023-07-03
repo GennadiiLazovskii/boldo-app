@@ -1,7 +1,7 @@
 import styles from './infographicScrean.module.scss';
-import MenGreen from '../../images/infographic/gren-m.png';
-import Men from '../../images/infographic/men.png';
-import Houses from '../../images/infographic/houses.png';
+import MenGreen from '../../../images/infographic/gren-m.png';
+import Men from '../../../images/infographic/men.png';
+import Houses from '../../../images/infographic/houses.png';
 
 const InfographicScrean = () => {
 

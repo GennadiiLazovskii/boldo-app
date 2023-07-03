@@ -6,6 +6,7 @@ import EnterpriseTemplate from './components/enterpriseTemplate/enterpriseTempla
 import InfographicScrean from './components/infographicScrean/infographicScrean'
 import MainScrean from './components/mainScrean/mainScrean'
 import PropositionProduct from './components/propositionProduct/propositionProduct'
+import StayOpen from './components/stayOpen/stayOpen'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <InfographicScrean/>
       <ConnectCustomers/>
       <EnterpriseTemplate/>
+      <StayOpen/>
       <PropositionProduct/>
       <EmailComponents/>
       <Bottom/>

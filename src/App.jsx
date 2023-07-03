@@ -1,4 +1,5 @@
 import './App.css'
+import Bottom from './components/bottom/bottom'
 import ConnectCustomers from './components/connectCustomers/connectCustomers'
 import EnterpriseTemplate from './components/enterpriseTemplate/enterpriseTemplate'
 import InfographicScrean from './components/infographicScrean/infographicScrean'
@@ -12,6 +13,7 @@ function App() {
       <InfographicScrean/>
       <ConnectCustomers/>
       <EnterpriseTemplate/>
+      <Bottom/>
     </>
   )
 }

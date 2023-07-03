@@ -1,0 +1,71 @@
+.bottom {
+  padding-top: 184px;
+
+  .container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 130px;
+
+    .columnLogo {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 300px;
+
+      .logo {
+        margin: 0;
+
+        img {
+          width: 170px;
+          height: 42px;
+        }
+      }
+
+      .description {
+        color: #777;
+        font-size: 16px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+
+    .columnWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        gap: 30px;
+
+        h2 {
+          margin: 0;
+          color: #000;
+          font-size: 20px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+        }
+
+        a {
+          margin: 0;
+          text-decoration: none;
+          color: #777;
+          font-size: 20px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

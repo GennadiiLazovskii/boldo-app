@@ -137,7 +137,7 @@
   height: 60px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .mainBottom {
     bottom: 0;
   }

@@ -1,3 +1,4 @@
+import { useSpring, animated } from 'react-spring';
 import styles from './mainScrean.module.scss';
 import BoldoLogo from '../../../images/main/logoBoldo.png';
 import BoldoLogoWhite from '../../../images/main/logoBoldoWhite.png';
@@ -5,6 +6,19 @@ import Graphics from '../../../images/main/graphicsgraf.png';
 import PrestoLogo from '../../../images/main/presto-logo.png';
 
 const MainScrean = () => {
+
+  const mainCenterLeftAnimation = useSpring({
+    from: { transform: 'translateX(-100%)' },
+    to: { transform: 'translateX(0%)' },
+    config: { duration: 500 },
+  });
+
+  const mainCenterRightAnimation = useSpring({
+    from: { transform: 'translateX(100%)' },
+    to: { transform: 'translateX(0%)' },
+    config: { duration: 500 },
+  });
+
   return (
     <div className={styles.mainScrean}>
       <div className={styles.container}>
@@ -19,7 +33,7 @@ const MainScrean = () => {
           </div>
         </div>
         <div className={styles.mainCenter}>
-          <div className={styles.mainCenterLeft}>
+          <animated.div className={styles.mainCenterLeft} style={mainCenterLeftAnimation}>
             <div className={styles.mainCenterLeftTitle}>
               <h1>Save time by building fast with Boldo Template</h1>
             </div>
@@ -27,10 +41,10 @@ const MainScrean = () => {
               <button className={styles.mainCenterBtnGreen}>Buy template</button>
               <button className={styles.mainCenterBtnWhite}>Explore</button>
             </div>
-          </div>
-          <div className={styles.mainCenterRight}>
+          </animated.div>
+          <animated.div className={styles.mainCenterRight} style={mainCenterRightAnimation}>
             <img src={Graphics} alt="Graphics" />
-          </div>
+          </animated.div>
         </div>
         <div className={styles.mainBottom}>
           <div className={styles.scrollingPhotos}>

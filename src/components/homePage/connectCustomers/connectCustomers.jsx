@@ -19,7 +19,7 @@ const ConnectCustomers = () => {
 
   const [headerRef, headerInView] = useInView({
     triggerOnce: true,
-    threshold: 0.3git,
+    threshold: 0.3,
   });
 
   const headerAnimation = useSpring({

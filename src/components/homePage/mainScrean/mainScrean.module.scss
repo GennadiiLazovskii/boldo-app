@@ -1,7 +1,7 @@
 .mainScrean {
   background: #0A2640;
   padding-top: 56px;
-  height: 780px;
+  height: 100vh;
 }
 
 .container {
@@ -109,9 +109,10 @@
 }
 
 .mainBottom {
-  margin-top: 30px;
-  background-color: #0A2640;
-  padding: 20px;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
   overflow-x: hidden;
 }
 
@@ -125,6 +126,7 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -133,4 +135,10 @@
 .scrollingPhotos img {
   width: 170px;
   height: 60px;
+}
+
+@media (min-width: 1200px) {
+  .mainBottom {
+    bottom: 0;
+  }
 }

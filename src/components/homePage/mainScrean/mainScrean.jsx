@@ -46,13 +46,13 @@ const MainScrean = () => {
             <img src={Graphics} alt="Graphics" />
           </animated.div>
         </div>
-        <div className={styles.mainBottom}>
-          <div className={styles.scrollingPhotos}>
-            <img src={BoldoLogoWhite} alt="BoldoLogo" />
-            <img src={PrestoLogo} alt="PrestoLogo" />
-            <img src={BoldoLogoWhite} alt="BoldoLogo" />
-            <img src={PrestoLogo} alt="PrestoLogo" />
-          </div>
+      </div>
+      <div className={styles.mainBottom}>
+        <div className={styles.scrollingPhotos}>
+          <img src={BoldoLogoWhite} alt="BoldoLogo" />
+          <img src={PrestoLogo} alt="PrestoLogo" />
+          <img src={BoldoLogoWhite} alt="BoldoLogo" />
+          <img src={PrestoLogo} alt="PrestoLogo" />
         </div>
       </div>
     </div>

@@ -19,12 +19,12 @@ const ConnectCustomers = () => {
 
   const [leftRef, leftInView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const [rightRef, rightInView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const leftAnimation = useSpring({

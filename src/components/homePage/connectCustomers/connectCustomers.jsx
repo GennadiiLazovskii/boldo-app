@@ -1,3 +1,5 @@
+import { useSpring, animated } from 'react-spring';
+import { useInView } from 'react-intersection-observer';
 import styles from './connectCustomers.module.scss';
 import {
   Men,
@@ -14,19 +16,44 @@ import {
 } from '../../../images/connectCustomers/connectCustomersImages.jsx';
 
 const ConnectCustomers = () => {
+
+  const [leftRef, leftInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const [rightRef, rightInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const leftAnimation = useSpring({
+    opacity: leftInView ? 1 : 0,
+    transform: leftInView ? 'translateX(0)' : 'translateX(-100px)',
+  });
+
+  const rightAnimation = useSpring({
+    opacity: rightInView ? 1 : 0,
+    transform: rightInView ? 'translateX(0)' : 'translateX(100px)',
+  });
+
+
   return (
     <div className={styles.connectCustomers}>
       <div className={styles.container}>
         <div className={styles.connectCustomersBlockHeader}>
-          <div className={styles.connectCustomersBlockLeft}>
+          <div ref={leftRef}>
+          <animated.div className={styles.connectCustomersBlockLeft} style={leftAnimation}>
             <img src={Men} alt="Men" />
             <div className={styles.connectCustomersBlockLeftCard}>
               <img src={InfoGrafic} alt="Grafic" />
               <h2>30%</h2>
               <p>More income in June</p>
             </div>
+          </animated.div>
           </div>
-          <div className={styles.connectCustomersBlockRight}>
+          <div ref={rightRef}>
+          <animated.div className={styles.connectCustomersBlockRight} style={rightAnimation}>
             <div className={styles.connectCustomersBlockRightTitle}>
               We connect our customers with the best, and help them keep up-and
               stay open.
@@ -48,6 +75,7 @@ const ConnectCustomers = () => {
             <div className={styles.connectCustomersBlockRightBtn}>
               <button>Start now</button>
             </div>
+          </animated.div>
           </div>
         </div>
 

@@ -17,33 +17,33 @@ import {
 
 const ConnectCustomers = () => {
 
-  const [leftRef, leftInView] = useInView({
+  const [headerRef, headerInView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.3git,
   });
 
-  const [rightRef, rightInView] = useInView({
+  const headerAnimation = useSpring({
+    opacity: headerInView ? 1 : 0,
+    marginLeft: headerInView ? 0 : -100,
+  });
+
+  const [bottomRef, bottomInView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.3,
   });
 
-  const leftAnimation = useSpring({
-    opacity: leftInView ? 1 : 0,
-    transform: leftInView ? 'translateX(0)' : 'translateX(-100px)',
-  });
-
-  const rightAnimation = useSpring({
-    opacity: rightInView ? 1 : 0,
-    transform: rightInView ? 'translateX(0)' : 'translateX(100px)',
+  const bottomAnimation = useSpring({
+    opacity: bottomInView ? 1 : 0,
+    marginRight: bottomInView ? 0 : -100,
   });
 
 
   return (
     <div className={styles.connectCustomers}>
       <div className={styles.container}>
+        <div ref={headerRef}>
         <div className={styles.connectCustomersBlockHeader}>
-          <div ref={leftRef}>
-          <animated.div className={styles.connectCustomersBlockLeft} style={leftAnimation}>
+          <animated.div className={styles.connectCustomersBlockLeft} style={headerAnimation}>
             <img src={Men} alt="Men" />
             <div className={styles.connectCustomersBlockLeftCard}>
               <img src={InfoGrafic} alt="Grafic" />
@@ -51,9 +51,7 @@ const ConnectCustomers = () => {
               <p>More income in June</p>
             </div>
           </animated.div>
-          </div>
-          <div ref={rightRef}>
-          <animated.div className={styles.connectCustomersBlockRight} style={rightAnimation}>
+          <animated.div className={styles.connectCustomersBlockRight} style={headerAnimation}>
             <div className={styles.connectCustomersBlockRightTitle}>
               We connect our customers with the best, and help them keep up-and
               stay open.
@@ -76,10 +74,11 @@ const ConnectCustomers = () => {
               <button>Start now</button>
             </div>
           </animated.div>
-          </div>
+        </div>
         </div>
 
-        <div className={styles.connectCustomersBlockBottom}>
+      <div ref={bottomRef}>
+      <animated.div className={styles.connectCustomersBlockBottom} style={bottomAnimation}>
           <div className={styles.connectCustomersBlockRight}>
             <img src={Woman} alt="Woman" />
             <div className={styles.connectCustomersBlockRightCard}>
@@ -120,7 +119,8 @@ const ConnectCustomers = () => {
               </div>
             </div>
           </div>
-        </div>
+        </animated.div>
+      </div>
       </div>
     </div>
   );
